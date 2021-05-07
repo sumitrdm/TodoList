@@ -1,6 +1,8 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
+  background-image: -webkit-linear-gradient(65deg, #00adb5 50%, #eeeeee 50%);
+
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -8,6 +10,10 @@ html {
 h1 {
   color: #fff;
   padding: 10px;
+}
+.h{
+  text-align: center;
+  color: #34656d;
 }
 
 .box {
@@ -51,7 +57,7 @@ p {
   color: #00204a;
 }
 
-form.item  {
+form .item  {
   text-align: center;
   margin-left: 20px;
 }
@@ -61,7 +67,7 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  background-color: #3f3697;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;

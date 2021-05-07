@@ -25,17 +25,17 @@ const Item = mongoose.model("Item",itemsSchema);
 //Item singular version par database mai collection name Items banega
 
 const item1 = new Item({
-  name:"Welcome to your TOdO List"
+  name:"Welcome to the New Technos"
 });
 
 
 const item2 = new Item({
-  name:"have a great coding dear"
+  name:"You can update and delete item"
 });
 
 
 const item3 = new Item({
-  name:"hope you and your family is safe"
+  name:"keep track of your works!!"
 });
 
 
