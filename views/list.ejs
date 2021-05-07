@@ -1,0 +1,36 @@
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+  <div class="box">
+
+
+
+  <%    newListItems.forEach(function(item){  %>
+    <form class="" action="/delete" method="post">
+
+        <div class="item">
+          <input type="checkbox" name="checkbox" value = <%=item._id%> onchange="this.form.submit()">
+          <!-- onchange="this.form.submit()" means ki jab checkbox check ho tabh post request jaye
+          kyuki hum submit button ni lagare hai jispe click tabh post request hoo soo islie jab checkbox
+          tick tabh post request hooo toh we use this.form.submit()
+          value attribute means tum usme kuch daalna chahte hoo toh kya daaldo in value so humne id daaldi document ki-->
+          <p><%=  item.name  %></p>
+        </div>
+
+        <input type="hidden" name="listName" value="<%=listTitle%>"></input>
+      </form>
+
+      <% }); %>
+
+
+
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="list" value="<%= listTitle%>">+</button>
+      </form>
+  </div>
+
+<%- include("footer") -%>
